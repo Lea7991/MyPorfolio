@@ -20,12 +20,12 @@
 </head>
 
 <body >
-    <section id="landing__page">
+    <section id="landing__page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img class="personal__logo" src="./assets/lp-logo-design_705304-909.jpg.avif" alt="">
             </figure>
-            <ul class="nav__link--list">
+            <ul class="nav__link--list" onclick="toggleModal()">
                 <li class="nav__link">
                     <a href="#" class=
                     "nav__link--anchor 
@@ -34,7 +34,7 @@
                     >About</a>
                 </li>
                 <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class=
+                    <a href="projects" class=
                     "nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black"
@@ -47,12 +47,11 @@
                     link__hover-effect--black"
                     >Contact</a>
                 </li>
-                <li class="nav__link click">
+                <li class="nav__link click" onclick="toggleContrast()">
                     <a href="#" class=
                     "nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black"
-                    
                     ><i class="fa-solid fa-circle-half-stroke"></i></a>
                 </li>
             </ul>
@@ -78,9 +77,11 @@
                 </div>
             </div>
         </header>
+        <a href="#">
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
+        </a>    
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -143,6 +144,16 @@
                 </div>
             </div>
         </div>
+        <img src="./assets/semi circle.svg" class="shapes shape--0">
+        <img src="./assets/circle.svg" class="shapes shape--1">
+        <img src="./assets/squiggly.svg" class="shapes shape--2">
+        <img src="./assets/circle.svg" class="shapes shape--3">
+        <img src="./assets/triangle.svg" class="shapes shape--4">
+        <img src="./assets/circle.svg" class="shapes shape--5">
+        <img src="./assets/squiggly.svg" class="shapes shape--6">
+        <img src="./assets/circle.svg" class="shapes shape--7">
+        <img src="./assets/semi circle.svg" class="shapes shape--8">
+        
     </section>
     <section id="projects">
         <div class="container">
@@ -251,14 +262,14 @@
             ">
             LinkedIn
             </a>
-            <a href="" class="
+            <a href="" onclick="toggleModal()" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
             ">
-            Email
+            Contact
             </a>
-            <a href="" class="
+            <a href="" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
