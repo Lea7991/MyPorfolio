@@ -55,12 +55,16 @@ function contact(event) {
 }
 
 
-function toggleModal() {
-    if (isModalOpen) {
-        isModalOpen = false;
-        return document.body.classList.remove("modal--open");
-    }
-    isModalOpen = true;
-    document.body.classList += " modal--open";
+function toggleModal(event) {
+  if (event) event.preventDefault();
 
+  if (isModalOpen) {
+    isModalOpen = false;
+    document.body.classList.remove("modal--open");
+  } else {
+    isModalOpen = true;
+    document.body.classList.add("modal--open");
+    window.scrollTo({ top: 0, behavior: "smooth" }); 
+  }
 }
+

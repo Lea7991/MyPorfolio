@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,700;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 html {
@@ -43,7 +41,7 @@ section {
 }
 
 .title {
-    font-size: 120px;
+    font-size: 100px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -180,6 +178,12 @@ input:focus, textarea:focus {
     color: #242424;
 }
 
+.dark-theme .personal__logo {
+     background-color: #242424;
+    color: white;
+}
+
+
 
 /* 
 LANDING PAGE
@@ -229,6 +233,7 @@ header {
     align-items: center;
     border-radius: 50%;
 }
+
 
 .mail__btn {
     width: 60px;
@@ -315,8 +320,9 @@ nav {
 
 .personal__logo {
     background-color: rgb(245, 245, 245);
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
+    font-weight: 700;
     
 }
 
@@ -524,6 +530,15 @@ PROJECTS
     margin-bottom: 135px;
 }
 
+.project__link {
+    color: white;
+}
+.project__link:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .project:hover .project__img {
     transform: scale(1.07%);
     filter: blur(5px);
@@ -614,6 +629,15 @@ footer {
     align-items: center;
 }
 
+.personal__logo--footer {
+    background-color:  #242424;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font-weight: 700;
+    
+}
+
 .footer__social--list {
     width: 100%;
     max-width: 500px;
@@ -625,6 +649,7 @@ footer {
 .footer__social--link,
 .footer__copyright {
     color: white;
+    z-index: 1000;
 }
 
 /*

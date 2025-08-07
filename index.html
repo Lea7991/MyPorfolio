@@ -23,24 +23,24 @@
     <section id="landing__page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
-                <img class="personal__logo" src="./assets/lp-logo-design_705304-909.jpg.avif" alt="">
+                <img class="personal__logo" src="./assets/initiallogo .png" alt="">
             </figure>
-            <ul class="nav__link--list" onclick="toggleModal()">
-                <li class="nav__link">
+            <ul class="nav__link--list" >
+                <li class="nav__link" onclick="toggleModal(event)">
                     <a href="#" class=
                     "nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black"
                     >About</a>
                 </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="projects" class=
+                <li class="nav__link">
+                    <a href="#projects" class=
                     "nav__link--anchor 
                     link__hover-effect 
                     link__hover-effect--black"
                     >Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal(event)">
                     <a href="#" class=
                     "nav__link--anchor 
                     link__hover-effect 
@@ -62,23 +62,23 @@
                 <h1 class="title__secondary"><span class="blue">I'm Lea.</span></h1>
                 <p class="header__para">
                     I'm a <span class="blue">Frontend Software Engineer</span> with a strong passion for building web applications with great user experiences. 
-                    <br>Here's more <span class="blue click" onclick="toggleModal()">about me.</span>
+                    <br>Here's more <span class="blue click" onclick="toggleModal(event)">about me.</span>
                 </p>
                 <div class="social__list">
-                    <a href="" target="_blank" class="social__link click">
+                    <a href="#" class="social__link click" onclick="toggleModal(event)">
                         <i class="fa-solid fa-envelope" ></i>
                     </a>
-                    <a href="" target="_blank" class="social__link click">
+                    <a href="https://github.com/Lea7991" target="_blank" class="social__link click">
                         <i class="fa-brands fa-square-github"></i>
                     </a>
-                    <a href="" target="_blank" class="social__link click">
-                        <i class="fa-brands fa-square-facebook"></i>
+                    <a href="https://www.linkedin.com/in/lea-parker-33b7aa378/" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
             </div>
         </header>
         <a href="#">
-        <button class="mail__btn click" onclick="toggleModal()">
+        <button class="mail__btn click" onclick="toggleModal(event)">
             <i class="fa-solid fa-envelope"></i>
         </button>
         </a>    
@@ -90,9 +90,9 @@
                 <h3 class="modal__title modal__title--about" >Here's a bit more about me.</h3>
                 <h4 class="modal__subtitle modal__subtitle--about">Frontend Software Engineer</h4>
                 <p class="modal__para">
-                    I'm a 21 year-old Australian <span class="blue"> frontend software engineer</span> with experience developing websites for top-tech companies like <span class="blue">Google</span> and <span class="blue">Canva.</span>
+                    I am  27-years-old and based in the United States, currently advancing my coding skills through <span class="blue"> Frontend Simplified</span>. Over the past year, I have cultivated a strong passion for both building and designing user-friendly websites.
                 <br>
-                 I currently solve extremely difficult engineering problems every day with <span class="blue">React</span>, <span class="blue">TypeScript</span>, and <span class="blue">MobX</span> in Canva's Video team.
+                 At present, I am engaged in developing a personal project while further enhancing my expertise in <span class="blue">Next.js</span>, <span class="blue">Tailwind CSS</span>, and other modern frontend technologies.
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
-                <i class="fa-regular fa-circle-xmark modal__exit click" onclick="toggleModal()"></i>
+                <i class="fa-regular fa-circle-xmark modal__exit click" onclick="toggleModal(event)"></i>
                 <h3 class="modal__title modal__title--contact">
                     Let's have a chat!
                 </h3>
@@ -164,87 +164,14 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora in quae dicta quo deleniti odio aperiam error dolorum voluptatibus esse.
-                                </p>
-                                <div class="project__descritpion--links">
-                                    <a href="" class="project__descritpion--link">
-                                        <i class="fa-brands fa-square-github"></i>
-                                    </a>
-                                    <a href="" class="project__descritpion--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora in quae dicta quo deleniti odio aperiam error dolorum voluptatibus esse.
-                                </p>
-                                <div class="project__descritpion--links">
-                                    <a href="" class="project__descritpion--link">
-                                        <i class="fa-brands fa-square-github"></i>
-                                    </a>
-                                    <a href="" class="project__descritpion--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Project
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora in quae dicta quo deleniti odio aperiam error dolorum voluptatibus esse.
-                                </p>
-                                <div class="project__descritpion--links">
-                                    <a href="" class="project__descritpion--link">
-                                        <i class="fa-brands fa-square-github"></i>
-                                    </a>
-                                    <a href="" class="project__descritpion--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
+                            <a href="https://lea-virtual-internship-zqxq.vercel.app/" target="_blank" class="project__link">
                             <img src="./assets/NFT Marketplace.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
                                     NFT Marketplace Internship Project 
                                 </h3>
+                            </a>
                                 <h4 class="project__description--sub-title">
                                     React, CSS, Firebase
                                 </h4>
@@ -252,7 +179,7 @@
                                     Built a responsive NFT display platform using React, showcasing 1,000+ digital assets with fast load times and seamless API integration.
                                 </p>
                                 <div class="project__descritpion--links">
-                                    <a href="" class="project__descritpion--link">
+                                    <a href="https://github.com/Lea7991/LeaVirtualInternship.git" class="project__descritpion--link">
                                         <i class="fa-brands fa-square-github"></i>
                                     </a>
                                     <a href="https://lea-virtual-internship-zqxq.vercel.app/" class="project__descritpion--link">
@@ -264,29 +191,113 @@
                     </li>
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <a href="https://lea-internship-skinstrinsic.vercel.app/" target="_blank" class="project__link">
+                            <img src="./assets/Skintrinsic.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    Car Sales Project
+                                    Skintrinsic AI Internship 
                                 </h3>
+                            </a>
                                 <h4 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript
+                                    React, Figma
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora in quae dicta quo deleniti odio aperiam error dolorum voluptatibus esse.
+                                    Developed a responsive AI skincare analysis app using React, delivering personalized skin assessments through real-time image processing and smooth API integration for skincare recommendations.
                                 </p>
                                 <div class="project__descritpion--links">
-                                    <a href="" class="project__descritpion--link">
+                                    <a href="https://github.com/Lea7991/Lea-InternshipSkinstrinsic.git" class="project__descritpion--link">
                                         <i class="fa-brands fa-square-github"></i>
                                     </a>
-                                    <a href="" class="project__descritpion--link">
+                                    <a href="https://lea-internship-skinstrinsic.vercel.app/" class="project__descritpion--link">
                                         <i class="fas fa-link"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <a href="https://netflix-clone-hdyc.vercel.app/" target="_blank" class="project__link">
+                            <img src="./assets/Netflix Clone.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Netflix Clone
+                                </h3>
+                                </a>
+                                <h4 class="project__description--sub-title">
+                                    React, CSS, Vite
+                                </h4>
+                                <p class="project__description--para">
+                                    A Netflix clone app built with React and designed with CSS. It features a responsive design, dynamic movie listings, and a clean, user-friendly interface. 
+                                </p>
+                                <div class="project__descritpion--links">
+                                    <a href="https://github.com/Lea7991/Netflix-Clone.git" class="project__descritpion--link">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                    <a href="https://netflix-clone-hdyc.vercel.app/" class="project__descritpion--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <a href="https://e-commerce-react-orpin-phi.vercel.app/" target="_blank" class="project__link">
+                            <img src="./assets/React Library.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Libary React App
+                                </h3>
+                                </a>
+                                <h4 class="project__description--sub-title">
+                                    React & CSS
+                                </h4>
+                                <p class="project__description--para">
+                                    A React-based library app styled with CSS, allowing users to browse a catalog of books, view details, and add selections to a cart. It features a clean interface and responsive design for a smooth user experience.
+                                </p>
+                                <div class="project__descritpion--links">
+                                    <a href="https://github.com/Lea7991/ECommerce-React.git" class="project__descritpion--link">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                    <a href="https://e-commerce-react-orpin-phi.vercel.app/" class="project__descritpion--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <a href=" https://lea7991.github.io/Module-2-Project/" target="_blank" class="project__link">
+                            <img src="./assets/Digital Template.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Digital Template Homepage
+                                </h3>
+                                </a>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Designed a modern homepage for a digital template website built with HTML and CSS. It showcases a responsive layout, sleek visual design, and intuitive navigation to highlight featured templates and attract users."
+                                </p>
+                                <div class="project__descritpion--links">
+                                    <a href="https://github.com/Lea7991/Module-2-Project.git" class="project__descritpion--link">
+                                        <i class="fa-brands fa-square-github"></i>
+                                    </a>
+                                    <a href=" https://lea7991.github.io/Module-2-Project/" class="project__descritpion--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -295,31 +306,31 @@
         <div class="container">
                 <div class="row footer__row">
                 <figure>
-            <img src="./assets/lp-logo-design_705304-909.jpg.avif" class="personal__logo" alt="">
+            <img src="./assets/initiallogowhite .png" class="personal__logo--footer" alt="">
             </figure>
                 <div class="footer__social--list">
-                <a href="" class="
+                <a href="https://github.com/Lea7991" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
             ">
             Github
             </a>
-            <a href="" class="
+            <a href="https://www.linkedin.com/in/lea-parker-33b7aa378/" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
             ">
             LinkedIn
             </a>
-            <a href="" onclick="toggleModal()" target="_blank" class="
+            <a href="#" onclick="toggleModal(event)" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
             ">
             Contact
             </a>
-            <a href="" target="_blank" class="
+            <a href="https://docs.google.com/document/d/1RtTMl6VY9suvUxXUxk0Frx1mBj_vBzEy/edit?usp=sharing&ouid=109714202981607453972&rtpof=true&sd=true" target="_blank" class="
             footer__social--link
             link__hover-effect
             link__hover-effect--white
